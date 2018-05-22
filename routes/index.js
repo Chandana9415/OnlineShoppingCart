@@ -16,13 +16,5 @@ res.send("order succesfully received: " + value_name);
 });
 
 
-//now processing post
-router.get('/storeData', function(req, res, next) {
-//expecting data variable called order--retrieve value using body-parser
-    //var value_name = req.body.order  //retrieve the data associated with order
-    res.send("order succesfully received: " );
-});
-
-
 
 module.exports = router;
