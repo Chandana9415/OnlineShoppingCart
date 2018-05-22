@@ -18,4 +18,39 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+//now processing post
+router.post('/storeData', function(req, res, next) {
+//expecting data variable called order--retrieve value using body-parser
+
+    var value_name = req.body.order;  //retrieve the data associated with order
+
+    res.send("order succesfully received: " + value_name);
+
+});
+
+
+
+// GET with  URI  /read/Lynne   which means name=Lynne
+router.get('/read/:name', function(req, res, next) {
+    //expecting data variable called name --retrieve value using body-parser
+    var body = JSON.stringify(req.body);  //if wanted entire body as JSON
+    var params = JSON.stringify(req.params);//if wanted parameters
+    var value_name = req.params.name;  //retrieve the data associated with name
+    res.send("hello " + value_name);
+});
+
+
+
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!')
+});
+
+
+
+
+
+
+
+
 module.exports = router;
