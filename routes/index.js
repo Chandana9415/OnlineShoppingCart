@@ -85,9 +85,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-
-
-
+9
 
 
 //CODE to route /getAllRoutes to appropriate  Controller function
