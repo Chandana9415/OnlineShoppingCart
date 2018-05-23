@@ -6,10 +6,11 @@ var router = express.Router();
 //var controllerMongoCollection=require('../controllers/database'); //load controller code dealing with mongodb and routes collection
 
 /* GET home page. */
+/*
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Express' });
 });
-
+*/
 //exercise m1 new code
 //var express = require('express');
 //var XXX = express.Router();
