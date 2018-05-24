@@ -30,6 +30,7 @@ module.exports.getAllOrders =  function (request, response) {
         c.forEach(
             function(myDoc) {
                 console.log( "name: " + myDoc.name );  //just  logging  the output to the console
+                operatorsAliases : false;
             }
         );
 
