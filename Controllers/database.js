@@ -1,5 +1,5 @@
 var mongodb = require('mongodb');
-var mongoDBURI = process.env.MONGODB_URI || 'mongodb://sharanya16:sAsh5+enkA@ds225840.mlab.com:25840/heroku_mgjkmjm6';
+var mongoDBURI = process.env.MONGODB_URI || 'mongodb://Chandana:Chandu03!@ds133360.mlab.com:33360/heroku_1zwzjmrz';
 
 
 /** getAllRoutes controller logic that current does model logic too -connects to Mongo database and
@@ -16,7 +16,7 @@ module.exports.getAllOrders =  function (request, response) {
 
 
         //get handle to the databse
-        var theDatabase = client.db('heroku_mgjkmjm6');
+        var theDatabase = client.db('heroku_1zwzjmrz');
 
 
         //get collection of routes
