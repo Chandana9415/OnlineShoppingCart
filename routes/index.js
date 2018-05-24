@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 mongodb = require('mongodb');
 
-var mongoDBURI = process.env.MONGODB_URI || 'mongodb://Chandana9415:Chandu03!@ds133360.mlab.com:33360/heroku_1zwzjmrz';
+var mongoDBURI = process.env.MONGODB_URI || 'mongodb://chandana9415:Chandu03!@ds133360.mlab.com:33360/heroku_1zwzjmrz';
 
 
 var controllerMongoCollection = require('../controllers/database'); //load controller code dealing with database mongodb and Routes collection
