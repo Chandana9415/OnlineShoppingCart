@@ -8,8 +8,6 @@ var mongoDBURI = process.env.MONGODB_URI || 'mongodb://Chandana:Chandu03!@ds1333
 var controllerMongoCollection = require('../controllers/database'); //load controller code dealing with database mongodb and Routes collection
 
 
-
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Express' });
@@ -41,6 +39,10 @@ router.post('/storeData', controllerMongoCollection.saveOrders);
 //***** mongodb get all of the Routes in Routes collection w
 //      and Render information iwith an ejs view
 router.get('/getAllOrders', controllerMongoCollection.getAllOrders);
-router.get('/getSavedOrder', controllerMongoCollection.getSavedOrder);
+router.get('/successSave', controllerMongoCollection.saveOrders);
+router.get('/getAllOrders',controllerMongoCollection.getAllOrders);
+router.get('/successSave',controllerMongoCollection.saveOrders);
+
+
 
 module.exports = router;
