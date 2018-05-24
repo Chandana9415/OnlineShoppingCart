@@ -17,9 +17,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-
-
-
 //CODE to route /getAllRoutes to appropriate  Controller function
 //**************************
 //*** mongodb get all of the Routes in Routes collection w
