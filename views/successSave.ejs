@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,15 +6,18 @@
 </head>
 <body>
 
-<h2>Database Results getting Routes </h2>
+<h4>Order Submitted Successfully. </h4>
+<p>Please keep the following ID for your reference:</p>
 <ul>
     <% results.forEach(function(r) { %>
-    <li><%=r.customerID%></li>
-    <li><%=r.billingID%></li>
-    <li><%=r.shippingID%></li>
+    <li>ORDER ID:<%=r.CUSTOMER_ID%></li>
+    <li>BILLING ID:<%=r.BILLING_ID%></li>
+    <li>SHIPPING ID:<%=r.SHIPPING_ID%></li>
+
     <br/> <br/>
     <% }); %>
 </ul>
+<p>Your order will be received in 5-7 working days.</p>
 
 </body>
 </html>
